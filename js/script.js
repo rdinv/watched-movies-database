@@ -13,7 +13,7 @@ const personalMovieDatabase = {
     count: numbetOfFilms,
     movies: {},
     actors: {},
-    geners: [],
+    genres: [],
     privat: false
 };
 
@@ -55,9 +55,9 @@ function showMyDB (hidden) {
 }
 showMyDB(personalMovieDatabase.privat);
 
-function writeYourGeners() {
+function writeYourGenres() {
     for (let i = 1; i <= 3; i++) {
-        personalMovieDatabase.geners[i - 1] = prompt (`Your favorite genre is numbered ${i}`);
+        personalMovieDatabase.genres[i - 1] = prompt (`Your favorite genre is numbered ${i}`);
     }
 }
-writeYourGeners();
+writeYourGenres();
