@@ -54,3 +54,10 @@ function showMyDB (hidden) {
     }
 }
 showMyDB(personalMovieDatabase.privat);
+
+function writeYourGeners() {
+    for (let i = 1; i <= 3; i++) {
+        personalMovieDatabase.geners[i - 1] = prompt (`Your favorite genre is numbered ${i}`);
+    }
+}
+writeYourGeners();
